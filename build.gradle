@@ -1,0 +1,65 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+project.ext.PENTAHO_VERSION = 'TRUNK-SNAPSHOT'
+project.ext.DRILL_JDBC_VERSION = '0.5.0-incubating-SNAPSHOT'
+
+repositories {
+  maven {
+    url 'http://nexus.pentaho.org/content/groups/omni/'
+  }
+  maven {
+    url 'http://repo.pentaho.org/artifactory/repo'
+  }
+  ivy {
+    url "http://repo.pentaho.org/artifactory/repo/"
+    layout  "pattern", {
+      ivy "[organisation]/[module]/[revision]/[module]-[revision].ivy.xml"
+      artifact "[organisation]/[module]/[revision]/[module]-[revision].jar"
+      m2compatible = true
+    }
+  }
+  mavenCentral()
+  mavenLocal()
+}
+
+configurations {
+  provided
+  compile.extendsFrom provided
+  runtimeWithoutCompile {
+      transitive = false
+  }
+  zip
+}
+
+dependencies {
+  provided  "pentaho-kettle:kettle-core:${PENTAHO_VERSION}"
+  compile  "org.apache.drill.exec:drill-jdbc:${DRILL_JDBC_VERSION}"
+  compile fileTree(dir: 'lib-dist', include: '*.jar')
+  runtimeWithoutCompile "org.apache.drill.exec:drill-jdbc:${DRILL_JDBC_VERSION}"
+}
+
+task plugin(dependsOn:jar, type: Zip) {
+  into("${project.name}/") {
+    from jar.outputs.files
+    from fileTree(dir: 'package-res')
+  }
+
+  // The list of JARs in the lib/ folder is the complement of the intersection of the compile and runtime dependencies,
+  // plus the JARs in the runtimeWithoutCompile config
+  def compileDeps = configurations.compile.resolve()
+  def runtimeDeps = configurations.runtime.resolve()
+  def leftovers = (compileDeps + runtimeDeps) - compileDeps.intersect(runtimeDeps)
+  into("${project.name}/lib") {
+    from leftovers
+    from configurations.runtimeWithoutCompile
+  }
+}
+
+artifacts {
+  zip plugin
+}
+
+task createGradleWrapper(type: Wrapper) {
+  gradleVersion = '1.7'
+}
