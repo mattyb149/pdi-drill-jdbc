@@ -30,6 +30,7 @@ configurations {
      transitive = false
   }
   runtime {
+      extendsFrom compile
       transitive = false
   }
   shell
@@ -40,11 +41,19 @@ dependencies {
   provided "pentaho-kettle:kettle-core:${PENTAHO_VERSION}"
   provided "pentaho-kettle:kettle-engine:${PENTAHO_VERSION}"
   provided "pentaho-kettle:kettle-dbdialog:${PENTAHO_VERSION}"
-  provided "pentaho-kettle:pdi-ce:${PENTAHO_VERSION}"
+  //provided "pentaho-kettle:pdi-ce:${PENTAHO_VERSION}"
   compile "org.apache.drill.exec:drill-jdbc-all:${DRILL_JDBC_VERSION}"
-  runtime 'org.eclipse.jetty:jetty-server:9.1.5.v20140505'
+  compile 'org.glassfish.jersey.core:jersey-common:2.8'
+  compile 'org.glassfish.jersey.core:jersey-server:2.8'
+  compile 'javax.servlet:javax.servlet-api:3.1.0'
+  compile 'javax.ws.rs:javax.ws.rs-api:2.0'
+  compile 'org.eclipse.jetty:jetty-server:9.1.5.v20140505'
+  compile 'org.eclipse.jetty:jetty-http:9.1.5.v20140505'
+  compile 'org.eclipse.jetty:jetty-io:9.1.5.v20140505'
+  compile 'org.eclipse.jetty:jetty-jmx:9.1.5.v20140505'
+  compile 'org.eclipse.jetty:jetty-xml:9.1.5.v20140505'
+  compile 'org.eclipse.jetty:jetty-util:9.1.5.v20140505'
 
-  //runtime  "org.mortbay.jetty:servlet-api:2.8"
   compile fileTree(dir: 'lib-dist', include: '*.jar')
 }
 
