@@ -1,4 +1,4 @@
-package org.pentaho.di.plugins.database;
+package org.pentaho.di.plugins.database.drill;
 
 import org.pentaho.di.core.Const;
 import org.pentaho.di.core.database.BaseDatabaseMeta;
@@ -7,57 +7,59 @@ import org.pentaho.di.core.database.DatabaseMeta;
 import org.pentaho.di.core.plugins.DatabaseMetaPlugin;
 import org.pentaho.di.core.row.ValueMetaInterface;
 
-@DatabaseMetaPlugin(type = "drill", typeDescription = "Apache Drill")
+@DatabaseMetaPlugin( type = "drill", typeDescription = "Apache Drill" )
 public class DrillDatabaseMeta extends BaseDatabaseMeta implements DatabaseInterface {
-  
+
   @Override
-  public int[] getAccessTypeList() {
-    return new int[] { DatabaseMeta.TYPE_ACCESS_NATIVE, DatabaseMeta.TYPE_ACCESS_JNDI };
+  public int[] getAccessTypeList () {
+    return new int[]{DatabaseMeta.TYPE_ACCESS_NATIVE, DatabaseMeta.TYPE_ACCESS_JNDI};
   }
 
   @Override
-  public int getDefaultDatabasePort() {
+  public int getDefaultDatabasePort () {
     return -1;
   }
 
   @Override
-  public String getDriverClass() {
-    return DrillProxyDriver.class.getCanonicalName();
-    
+  public String getDriverClass () {
+    return DrillProxyDriver.class.getCanonicalName ();
+
   }
 
   @Override
-  public String getURL( String hostname, String port, String databaseName ) {
-    return "jdbc:drill:zk=local";//+hostname+((port!= null) ? ":"+port : "") + "/" + databaseName;
-    
+  public String getURL ( String hostname, String port, String databaseName ) {
+    return "jdbc:drill:zk=" + hostname
+          + (!Const.isEmpty ( port ) ? ":" + port : "")
+          + (!Const.isEmpty ( databaseName ) ? ";schema=" + databaseName : "");
+
   }
 
   @Override
-  public String getAddColumnStatement( String arg0, ValueMetaInterface arg1, String arg2, boolean arg3, String arg4,
-      boolean arg5 ) {
+  public String getAddColumnStatement ( String arg0, ValueMetaInterface arg1, String arg2, boolean arg3, String arg4,
+                                        boolean arg5 ) {
     return null;
   }
 
   @Override
-  public String getFieldDefinition( ValueMetaInterface v, String tk, String pk, boolean use_autoinc,
-      boolean add_fieldname, boolean add_cr ) {
+  public String getFieldDefinition ( ValueMetaInterface v, String tk, String pk, boolean use_autoinc,
+                                     boolean add_fieldname, boolean add_cr ) {
     String retval = "";
 
-    String fieldname = v.getName();
-    int length = v.getLength();
-    int precision = v.getPrecision();
+    String fieldname = v.getName ();
+    int length = v.getLength ();
+    int precision = v.getPrecision ();
 
     if ( add_fieldname ) {
       retval += fieldname + " ";
     }
 
-    int type = v.getType();
+    int type = v.getType ();
     switch ( type ) {
       case ValueMetaInterface.TYPE_DATE:
         retval += "TIMESTAMP";
         break;
       case ValueMetaInterface.TYPE_BOOLEAN:
-        if ( supportsBooleanDataType() ) {
+        if ( supportsBooleanDataType () ) {
           retval += "BOOLEAN";
         } else {
           retval += "CHAR(1)";
@@ -66,15 +68,15 @@ public class DrillDatabaseMeta extends BaseDatabaseMeta implements DatabaseInter
       case ValueMetaInterface.TYPE_NUMBER:
       case ValueMetaInterface.TYPE_INTEGER:
       case ValueMetaInterface.TYPE_BIGNUMBER:
-        if ( fieldname.equalsIgnoreCase( tk ) || // Technical key
-            fieldname.equalsIgnoreCase( pk ) // Primary key
-        ) {
+        if ( fieldname.equalsIgnoreCase ( tk ) || // Technical key
+              fieldname.equalsIgnoreCase ( pk ) // Primary key
+              ) {
           retval += "BIGSERIAL";
         } else {
           if ( length > 0 ) {
             if ( precision > 0 || length > 18 ) {
               // Numeric(Precision, Scale): Precision = total length; Scale = decimal places
-              retval += "NUMERIC(" + ( length + precision ) + ", " + precision + ")";
+              retval += "NUMERIC(" + (length + precision) + ", " + precision + ")";
             } else {
               if ( length > 9 ) {
                 retval += "BIGINT";
@@ -112,13 +114,13 @@ public class DrillDatabaseMeta extends BaseDatabaseMeta implements DatabaseInter
   }
 
   @Override
-  public String getModifyColumnStatement( String arg0, ValueMetaInterface arg1, String arg2, boolean arg3, String arg4,
-      boolean arg5 ) {
+  public String getModifyColumnStatement ( String arg0, ValueMetaInterface arg1, String arg2, boolean arg3, String arg4,
+                                           boolean arg5 ) {
     return null;
   }
 
   @Override
-  public String[] getUsedLibraries() {
+  public String[] getUsedLibraries () {
     return null;
   }
 }

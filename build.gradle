@@ -29,10 +29,6 @@ configurations {
      extendsFrom provided
      transitive = false
   }
-  runtime {
-      extendsFrom compile
-      transitive = false
-  }
   shell
   zip
 }
@@ -41,20 +37,7 @@ dependencies {
   provided "pentaho-kettle:kettle-core:${PENTAHO_VERSION}"
   provided "pentaho-kettle:kettle-engine:${PENTAHO_VERSION}"
   provided "pentaho-kettle:kettle-dbdialog:${PENTAHO_VERSION}"
-  //provided "pentaho-kettle:pdi-ce:${PENTAHO_VERSION}"
   compile "org.apache.drill.exec:drill-jdbc-all:${DRILL_JDBC_VERSION}"
-  compile 'org.glassfish.jersey.core:jersey-common:2.8'
-  compile 'org.glassfish.jersey.core:jersey-server:2.8'
-  compile 'javax.servlet:javax.servlet-api:3.1.0'
-  compile 'javax.ws.rs:javax.ws.rs-api:2.0'
-  compile 'org.eclipse.jetty:jetty-server:9.1.5.v20140505'
-  compile 'org.eclipse.jetty:jetty-http:9.1.5.v20140505'
-  compile 'org.eclipse.jetty:jetty-io:9.1.5.v20140505'
-  compile 'org.eclipse.jetty:jetty-jmx:9.1.5.v20140505'
-  compile 'org.eclipse.jetty:jetty-xml:9.1.5.v20140505'
-  compile 'org.eclipse.jetty:jetty-util:9.1.5.v20140505'
-
-  compile fileTree(dir: 'lib-dist', include: '*.jar')
 }
 
 task plugin(dependsOn:jar, type: Zip) {
@@ -65,9 +48,9 @@ task plugin(dependsOn:jar, type: Zip) {
 
   // The list of JARs in the lib/ folder is the complement of the intersection of the compile and runtime dependencies,
   // plus the JARs in the runtimeWithoutCompile config
-  def runtimeDeps = configurations.runtime.resolve()
+  def compileDeps = configurations.compile.resolve()
   def providedDeps = configurations.provided.resolve()
-  def leftovers = runtimeDeps - providedDeps
+  def leftovers = compileDeps - providedDeps
     leftovers.each {println it}
   into("${project.name}/lib") {
     from leftovers

@@ -1,4 +1,4 @@
-package org.pentaho.di.plugins.database;
+package org.pentaho.di.plugins.database.drill;
 
 import java.sql.Connection;
 import java.sql.Driver;
