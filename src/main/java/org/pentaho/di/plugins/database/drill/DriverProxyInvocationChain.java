@@ -22,10 +22,6 @@
 
 package org.pentaho.di.plugins.database.drill;
 
-import org.apache.drill.jdbc.DrillResultSet;
-
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -73,20 +69,20 @@ public class DriverProxyInvocationChain {
    * @param obj  the real object to create a proxy for
    * @return the proxy of the object's implementation of the interface
    */
-  public static Driver getProxy ( Class<? extends Driver> intf, final Driver obj ) {
-    driverProxyClassLoader = obj.getClass ().getClassLoader ();
+  public static Driver getProxy( Class<? extends Driver> intf, final Driver obj ) {
+    driverProxyClassLoader = obj.getClass().getClassLoader();
     if ( !initialized ) {
-      init ();
+      init();
     }
 
-    return (Driver) Proxy.newProxyInstance ( driverProxyClassLoader, new Class[]{intf},
-          new DriverInvocationHandler ( obj ) );
+    return (Driver) Proxy.newProxyInstance( driverProxyClassLoader, new Class[]{intf},
+          new DriverInvocationHandler( obj ) );
   }
 
   /**
    * Initializes the Driver proxy chain
    */
-  protected static void init () {
+  protected static void init() {
 
     initialized = true;
   }
@@ -108,7 +104,7 @@ public class DriverProxyInvocationChain {
      *
      * @param obj the Driver to proxy
      */
-    public DriverInvocationHandler ( Driver obj ) {
+    public DriverInvocationHandler( Driver obj ) {
       driver = obj;
     }
 
@@ -122,20 +118,20 @@ public class DriverProxyInvocationChain {
      * @throws Throwable if an error occurs during processing
      */
     @Override
-    public Object invoke ( final Object proxy, Method method, Object[] args ) throws Throwable {
+    public Object invoke( final Object proxy, Method method, Object[] args ) throws Throwable {
 
       try {
-        Object o = method.invoke ( driver, args );
+        Object o = method.invoke( driver, args );
         if ( o instanceof Connection ) {
 
           // Intercept the Connection object so we can proxy that too
-          return Proxy.newProxyInstance ( o.getClass ().getClassLoader (),
-                new Class[]{Connection.class}, new ConnectionInvocationHandler ( (Connection) o ) );
+          return Proxy.newProxyInstance( o.getClass().getClassLoader(),
+                new Class[]{Connection.class}, new ConnectionInvocationHandler( (Connection) o ) );
         } else {
           return o;
         }
       } catch ( Throwable t ) {
-        throw (t instanceof InvocationTargetException) ? t.getCause () : t;
+        throw (t instanceof InvocationTargetException) ? t.getCause() : t;
       }
     }
   }
@@ -157,7 +153,7 @@ public class DriverProxyInvocationChain {
      *
      * @param obj the obj
      */
-    public ConnectionInvocationHandler ( Connection obj ) {
+    public ConnectionInvocationHandler( Connection obj ) {
       connection = obj;
     }
 
@@ -171,25 +167,25 @@ public class DriverProxyInvocationChain {
      * @throws Throwable the throwable
      */
     @Override
-    public Object invoke ( Object proxy, Method method, Object[] args ) throws Throwable {
+    public Object invoke( Object proxy, Method method, Object[] args ) throws Throwable {
       Object o;
       try {
-        o = method.invoke ( connection, args );
+        o = method.invoke( connection, args );
       } catch ( Throwable t ) {
 
         if ( t instanceof InvocationTargetException ) {
-          Throwable cause = t.getCause ();
+          Throwable cause = t.getCause();
 
           if ( cause instanceof SQLException ) {
-            if ( cause.getMessage ().equals ( "Method not supported" ) ) {
-              String methodName = method.getName ();
-              if ( "createStatement".equals ( methodName ) ) {
-                o = createStatement ( connection, args );
-              } else if ( "isReadOnly".equals ( methodName ) ) {
+            if ( cause.getMessage().equals( "Method not supported" ) ) {
+              String methodName = method.getName();
+              if ( "createStatement".equals( methodName ) ) {
+                o = createStatement( connection, args );
+              } else if ( "isReadOnly".equals( methodName ) ) {
                 o = Boolean.FALSE;
-              } else if ( "setReadOnly".equals ( methodName ) ) {
+              } else if ( "setReadOnly".equals( methodName ) ) {
                 o = null;
-              } else if ( "setAutoCommit".equals ( methodName ) ) {
+              } else if ( "setAutoCommit".equals( methodName ) ) {
                 o = null;
               } else {
                 throw cause;
@@ -209,20 +205,20 @@ public class DriverProxyInvocationChain {
         DatabaseMetaData dbmd = (DatabaseMetaData) o;
 
         // Intercept the DatabaseMetaData object so we can proxy that too
-        return Proxy.newProxyInstance ( dbmd.getClass ().getClassLoader (),
-              new Class[]{DatabaseMetaData.class}, new DatabaseMetaDataInvocationHandler ( dbmd, this ) );
+        return Proxy.newProxyInstance( dbmd.getClass().getClassLoader(),
+              new Class[]{DatabaseMetaData.class}, new DatabaseMetaDataInvocationHandler( dbmd, this ) );
       } else if ( o instanceof PreparedStatement ) {
         PreparedStatement st = (PreparedStatement) o;
 
         // Intercept the Statement object so we can proxy that too
-        return Proxy.newProxyInstance ( st.getClass ().getClassLoader (),
-              new Class[]{PreparedStatement.class}, new CaptureResultSetInvocationHandler<PreparedStatement> ( st ) );
+        return Proxy.newProxyInstance( st.getClass().getClassLoader(),
+              new Class[]{PreparedStatement.class}, new CaptureResultSetInvocationHandler<PreparedStatement>( st ) );
       } else if ( o instanceof Statement ) {
         Statement st = (Statement) o;
 
         // Intercept the Statement object so we can proxy that too
-        return Proxy.newProxyInstance ( st.getClass ().getClassLoader (),
-              new Class[]{Statement.class}, new CaptureResultSetInvocationHandler<Statement> ( st ) );
+        return Proxy.newProxyInstance( st.getClass().getClassLoader(),
+              new Class[]{Statement.class}, new CaptureResultSetInvocationHandler<Statement>( st ) );
       } else {
         return o;
       }
@@ -237,12 +233,12 @@ public class DriverProxyInvocationChain {
      * @throws SQLException the sQL exception
      * @see java.sql.Connection#createStatement(int, int)
      */
-    public Statement createStatement ( Connection c, Object[] args ) throws SQLException {
-      if ( c.isClosed () ) {
-        throw new SQLException ( "Can't create Statement, connection is closed " );
+    public Statement createStatement( Connection c, Object[] args ) throws SQLException {
+      if ( c.isClosed() ) {
+        throw new SQLException( "Can't create Statement, connection is closed " );
       }
 
-      return c.createStatement ();
+      return c.createStatement();
     }
   }
 
@@ -268,7 +264,7 @@ public class DriverProxyInvocationChain {
      *
      * @param t the database metadata object to proxy
      */
-    public DatabaseMetaDataInvocationHandler ( DatabaseMetaData t, ConnectionInvocationHandler c ) {
+    public DatabaseMetaDataInvocationHandler( DatabaseMetaData t, ConnectionInvocationHandler c ) {
       this.t = t;
       this.c = c;
     }
@@ -283,33 +279,33 @@ public class DriverProxyInvocationChain {
      * @throws Throwable the throwable
      */
     @Override
-    public Object invoke ( Object proxy, Method method, Object[] args ) throws Throwable {
+    public Object invoke( Object proxy, Method method, Object[] args ) throws Throwable {
 
       try {
-        String methodName = method.getName ();
-        if ( "getConnection".equals ( methodName ) ) {
+        String methodName = method.getName();
+        if ( "getConnection".equals( methodName ) ) {
           // Return the connection
           return c;
-        } else if ( "getIdentifierQuoteString".equals ( methodName ) ) {
+        } else if ( "getIdentifierQuoteString".equals( methodName ) ) {
           // Need to intercept getIdentifierQuoteString() before trying the driver version, as our "fixed"
           // drivers return a single quote when it should be empty.
           // TODO can we remove this?
-          return getIdentifierQuoteString ();
+          return getIdentifierQuoteString();
         }
 
         // try to invoke the method as-is
-        Object o = method.invoke ( t, args );
+        Object o = method.invoke( t, args );
         if ( o instanceof ResultSet ) {
           ResultSet r = (ResultSet) o;
 
-          return Proxy.newProxyInstance ( r.getClass ().getClassLoader (),
-                new Class[]{ResultSet.class}, new ResultSetInvocationHandler ( r ) );
+          return Proxy.newProxyInstance( r.getClass().getClassLoader(),
+                new Class[]{ResultSet.class}, new ResultSetInvocationHandler( r ) );
         } else {
           return o;
         }
       } catch ( Throwable t ) {
         if ( t instanceof InvocationTargetException ) {
-          Throwable cause = t.getCause ();
+          Throwable cause = t.getCause();
           throw cause;
         } else {
           throw t;
@@ -323,8 +319,8 @@ public class DriverProxyInvocationChain {
      * @return String the quote string for identifiers in HiveQL
      * @throws SQLException if any SQL error occurs
      */
-    public String getIdentifierQuoteString () throws SQLException {
-      return "";
+    public String getIdentifierQuoteString() throws SQLException {
+      return "`";
     }
 
   }
@@ -348,7 +344,7 @@ public class DriverProxyInvocationChain {
      *
      * @param t the t
      */
-    public CaptureResultSetInvocationHandler ( T t ) {
+    public CaptureResultSetInvocationHandler( T t ) {
       this.t = t;
     }
 
@@ -362,21 +358,21 @@ public class DriverProxyInvocationChain {
      * @throws Throwable the throwable
      */
     @Override
-    public Object invoke ( Object proxy, Method method, Object[] args ) throws Throwable {
+    public Object invoke( Object proxy, Method method, Object[] args ) throws Throwable {
       // try to invoke the method as-is
       try {
-        return getProxiedObject ( method.invoke ( t, args ) );
+        return getProxiedObject( method.invoke( t, args ) );
       } catch ( InvocationTargetException ite ) {
-        Throwable cause = ite.getCause ();
+        Throwable cause = ite.getCause();
 
         if ( cause instanceof SQLException ) {
-          if ( cause.getMessage ().equals ( "Method not supported" ) ) {
-            String methodName = method.getName ();
+          if ( cause.getMessage().equals( "Method not supported" ) ) {
+            String methodName = method.getName();
             // Intercept PreparedStatement.getMetaData() to see if it throws an exception
-            if ( "getMetaData".equals ( methodName ) && (args == null || args.length == 0) ) {
-              return getProxiedObject ( getMetaData () );
-            } else if ( PreparedStatement.class.isInstance ( proxy ) && "setObject".equals ( methodName )
-                  && args.length == 2 && Integer.class.isInstance ( args[0] ) ) {
+            if ( "getMetaData".equals( methodName ) && (args == null || args.length == 0) ) {
+              return getProxiedObject( getMetaData() );
+            } else if ( PreparedStatement.class.isInstance( proxy ) && "setObject".equals( methodName )
+                  && args.length == 2 && Integer.class.isInstance( args[0] ) ) {
               // Intercept PreparedStatement.setObject(position, value)
               // Set value using value type instead
               // TODO do we need this? Or does Drill insulate us from Hive (specifically older Hive versions)?
@@ -386,37 +382,37 @@ public class DriverProxyInvocationChain {
 
               if ( x == null ) {
                 // PreparedStatement.setNull may not be supported
-                ps.setNull ( parameterIndex, Types.NULL );
+                ps.setNull( parameterIndex, Types.NULL );
               } else if ( x instanceof String ) {
-                ps.setString ( parameterIndex, (String) x );
+                ps.setString( parameterIndex, (String) x );
               } else if ( x instanceof Short ) {
-                ps.setShort ( parameterIndex, ((Short) x).shortValue () );
+                ps.setShort( parameterIndex, ((Short) x).shortValue() );
               } else if ( x instanceof Integer ) {
-                ps.setInt ( parameterIndex, ((Integer) x).intValue () );
+                ps.setInt( parameterIndex, ((Integer) x).intValue() );
               } else if ( x instanceof Long ) {
-                ps.setLong ( parameterIndex, ((Long) x).longValue () );
+                ps.setLong( parameterIndex, ((Long) x).longValue() );
               } else if ( x instanceof Float ) {
-                ps.setFloat ( parameterIndex, ((Float) x).floatValue () );
+                ps.setFloat( parameterIndex, ((Float) x).floatValue() );
               } else if ( x instanceof Double ) {
-                ps.setDouble ( parameterIndex, ((Double) x).doubleValue () );
+                ps.setDouble( parameterIndex, ((Double) x).doubleValue() );
               } else if ( x instanceof Boolean ) {
-                ps.setBoolean ( parameterIndex, ((Boolean) x).booleanValue () );
+                ps.setBoolean( parameterIndex, ((Boolean) x).booleanValue() );
               } else if ( x instanceof Byte ) {
-                ps.setByte ( parameterIndex, ((Byte) x).byteValue () );
+                ps.setByte( parameterIndex, ((Byte) x).byteValue() );
               } else if ( x instanceof Character ) {
-                ps.setString ( parameterIndex, x.toString () );
+                ps.setString( parameterIndex, x.toString() );
               } else {
                 // Can't infer a type.
-                throw new SQLException ( "Type " + x.getClass () + " is not yet supported", cause );
+                throw new SQLException( "Type " + x.getClass() + " is not yet supported", cause );
               }
               return null;
-            } else if ( PreparedStatement.class.isInstance ( proxy ) && "setNull".equals ( methodName )
-                  && args.length == 2 && Integer.class.isInstance ( args[0] ) ) {
+            } else if ( PreparedStatement.class.isInstance( proxy ) && "setNull".equals( methodName )
+                  && args.length == 2 && Integer.class.isInstance( args[0] ) ) {
 
               PreparedStatement ps = (PreparedStatement) proxy;
               int parameterIndex = (Integer) args[0];
               // Use empty String instead (not ideal, but won't crash)
-              ps.setString ( parameterIndex, "" );
+              ps.setString( parameterIndex, "" );
 
               return null;
             } else {
@@ -440,12 +436,12 @@ public class DriverProxyInvocationChain {
      * @see java.sql.PreparedStatement#getMetaData()
      */
 
-    public ResultSetMetaData getMetaData () {
+    public ResultSetMetaData getMetaData() {
       ResultSetMetaData rsmd = null;
       if ( t instanceof Statement ) {
         try {
-          ResultSet resultSet = ((Statement) t).getResultSet ();
-          rsmd = (resultSet == null ? null : resultSet.getMetaData ());
+          ResultSet resultSet = ((Statement) t).getResultSet();
+          rsmd = (resultSet == null ? null : resultSet.getMetaData());
         } catch ( SQLException se ) {
           rsmd = null;
         }
@@ -453,7 +449,7 @@ public class DriverProxyInvocationChain {
       return rsmd;
     }
 
-    private Object getProxiedObject ( Object o ) {
+    private Object getProxiedObject( Object o ) {
       if ( o == null ) {
         return null;
       }
@@ -461,13 +457,13 @@ public class DriverProxyInvocationChain {
       if ( o instanceof ResultSet ) {
         ResultSet r = (ResultSet) o;
 
-        return Proxy.newProxyInstance ( r.getClass ().getClassLoader (),
-              new Class[]{ResultSet.class}, new ResultSetInvocationHandler ( r, t ) );
+        return Proxy.newProxyInstance( r.getClass().getClassLoader(),
+              new Class[]{ResultSet.class}, new ResultSetInvocationHandler( r, t ) );
       } else if ( o instanceof ResultSetMetaData ) {
         ResultSetMetaData r = (ResultSetMetaData) o;
 
-        return Proxy.newProxyInstance ( r.getClass ().getClassLoader (),
-              new Class[]{ResultSetMetaData.class}, new ResultSetMetaDataInvocationHandler ( r ) );
+        return Proxy.newProxyInstance( r.getClass().getClassLoader(),
+              new Class[]{ResultSetMetaData.class}, new ResultSetMetaDataInvocationHandler( r ) );
       } else {
         return o;
       }
@@ -492,7 +488,7 @@ public class DriverProxyInvocationChain {
      *
      * @param r the r
      */
-    public ResultSetInvocationHandler ( ResultSet r ) {
+    public ResultSetInvocationHandler( ResultSet r ) {
       rs = r;
     }
 
@@ -501,7 +497,7 @@ public class DriverProxyInvocationChain {
      *
      * @param r the r
      */
-    public ResultSetInvocationHandler ( ResultSet r, Statement s ) {
+    public ResultSetInvocationHandler( ResultSet r, Statement s ) {
       rs = r;
       st = s;
     }
@@ -516,25 +512,25 @@ public class DriverProxyInvocationChain {
      * @throws Throwable the throwable
      */
     @Override
-    public Object invoke ( Object proxy, Method method, Object[] args ) throws Throwable {
+    public Object invoke( Object proxy, Method method, Object[] args ) throws Throwable {
 
       try {
-        String methodName = method.getName ();
+        String methodName = method.getName();
 
         // Intercept the getString(String) method to implement the hack for "show tables" vs. getTables()
-        if ( "getString".equals ( methodName ) && args != null && args.length == 1 && args[0] instanceof String ) {
-          return getString ( (String) args[0] );
-        } else if ( "getType".equals ( methodName ) ) {
+        if ( "getString".equals( methodName ) && args != null && args.length == 1 && args[0] instanceof String ) {
+          return getString( (String) args[0] );
+        } else if ( "getType".equals( methodName ) ) {
           // Return TYPE_FORWARD_ONLY (scrollability is not really supported)
           return ResultSet.TYPE_FORWARD_ONLY;
         } else {
-          Object o = method.invoke ( rs, args );
+          Object o = method.invoke( rs, args );
 
           if ( o instanceof ResultSetMetaData ) {
             // Intercept the ResultSetMetaData object so we can proxy that too
-            return (ResultSetMetaData) Proxy.newProxyInstance ( o.getClass ().getClassLoader (),
+            return (ResultSetMetaData) Proxy.newProxyInstance( o.getClass().getClassLoader(),
                   new Class[]{ResultSetMetaData.class},
-                  new ResultSetMetaDataInvocationHandler ( (ResultSetMetaData) o ) );
+                  new ResultSetMetaDataInvocationHandler( (ResultSetMetaData) o ) );
           } else {
             return o;
           }
@@ -542,20 +538,39 @@ public class DriverProxyInvocationChain {
       } catch ( Throwable t ) {
 
         if ( t instanceof InvocationTargetException ) {
-          Throwable cause = t.getCause ();
-          String methodName = method.getName ();
+          Throwable cause = t.getCause();
+          String methodName = method.getName();
 
           if ( cause instanceof SQLException ) {
-            if ( cause.getMessage ().equals ( "Method not supported" ) ) {
-              if ( "getStatement".equals ( methodName ) ) {
-                return getStatement ();
+            String message = cause.getMessage();
+            if ( message.startsWith( "Method not supported" ) ) {
+              if ( "getStatement".equals( methodName ) ) {
+                return getStatement();
               } else {
                 throw cause;
               }
+            } else if ( message.startsWith( "Requesting class of type " ) ) {
+              // This is a Drill exception but we can't currently access the exception class, so just check the
+              // message.
+              if ( methodName.equals( "getBoolean" ) && args != null && args.length == 1 ) {
+                if ( Integer.TYPE.isAssignableFrom( method.getParameterTypes()[0] ) ) {
+                  return rs.getInt( (Integer) args[0] ) == 0 ? false : true;
+                } else if ( String.class.isAssignableFrom( method.getParameterTypes()[0] ) ) {
+                  return rs.getInt( (String) args[0] ) == 0 ? false : true;
+                }
+              }
+              if ( methodName.equals( "getLong" ) && args != null && args.length == 1 ) {
+                if ( Integer.TYPE.isAssignableFrom( method.getParameterTypes()[0] ) ) {
+                  return (long) rs.getInt( (Integer) args[0] );
+                } else if ( String.class.isAssignableFrom( method.getParameterTypes()[0] ) ) {
+                  return (long) rs.getInt( (String) args[0] );
+                }
+              }
+              throw cause;
             } else {
               throw cause;
             }
-          } else if ( cause instanceof IllegalMonitorStateException && "close".equals ( methodName ) ) {
+          } else if ( cause instanceof IllegalMonitorStateException && "close".equals( methodName ) ) {
             // Workaround for BISERVER-11782. By this moment invocation of closeClientOperation did it's job and failed
             // trying to unlock not locked lock, just ignore this.
             return null;
@@ -568,7 +583,7 @@ public class DriverProxyInvocationChain {
       }
     }
 
-    private Statement getStatement () {
+    private Statement getStatement() {
       return st;
     }
 
@@ -579,12 +594,12 @@ public class DriverProxyInvocationChain {
      * @return the string value of the row at the column with the specified name
      * @throws SQLException if the column name cannot be found
      */
-    public String getString ( String columnName ) throws SQLException {
+    public String getString( String columnName ) throws SQLException {
 
       String columnVal = null;
       Throwable exception = null;
       try {
-        columnVal = rs.getString ( columnName );
+        columnVal = rs.getString( columnName );
       } catch ( Throwable t ) {
         // Save for returning later
         exception = t;
@@ -593,14 +608,14 @@ public class DriverProxyInvocationChain {
         return columnVal;
       }
       // getString() didn't work, let's try searching the columns for the name
-      ResultSetMetaData rsmd = rs.getMetaData ();
-      int colCount = rsmd.getColumnCount ();
+      ResultSetMetaData rsmd = rs.getMetaData();
+      int colCount = rsmd.getColumnCount();
       int i = 1;
-      while ( i <= colCount && !rsmd.getColumnName ( i ).equals ( columnName ) ) {
+      while ( i <= colCount && !rsmd.getColumnName( i ).equals( columnName ) ) {
         i++;
       }
       if ( i <= colCount ) {
-        columnVal = rs.getString ( i );
+        columnVal = rs.getString( i );
       }
 
       return columnVal;
@@ -624,7 +639,7 @@ public class DriverProxyInvocationChain {
      *
      * @param r the r
      */
-    public ResultSetMetaDataInvocationHandler ( ResultSetMetaData r ) {
+    public ResultSetMetaDataInvocationHandler( ResultSetMetaData r ) {
       rsmd = r;
     }
 
@@ -638,22 +653,22 @@ public class DriverProxyInvocationChain {
      * @throws Throwable the throwable
      */
     @Override
-    public Object invoke ( Object proxy, Method method, Object[] args ) throws Throwable {
+    public Object invoke( Object proxy, Method method, Object[] args ) throws Throwable {
       try {
-        String methodName = method.getName ();
-        if ( ("getColumnName".equals ( methodName ) || ("getColumnLabel".equals ( methodName ))) && (args != null) && (args.length == 1) ) {
-          return getColumnName ( (Integer) args[0] );
+        String methodName = method.getName();
+        if ( ("getColumnName".equals( methodName ) || ("getColumnLabel".equals( methodName ))) && (args != null) && (args.length == 1) ) {
+          return getColumnName( (Integer) args[0] );
         }
-        return method.invoke ( this.rsmd, args );
+        return method.invoke( this.rsmd, args );
       } catch ( Throwable t ) {
         if ( (t instanceof InvocationTargetException) ) {
-          Throwable cause = t.getCause ();
+          Throwable cause = t.getCause();
           if ( (cause instanceof SQLException) ) {
-            if ( cause.getMessage ().equals ( "Method not supported" ) ) {
-              String methodName = method.getName ();
-              if ( "isSigned".equals ( methodName ) ) {
+            if ( cause.getMessage().equals( "Method not supported" ) ) {
+              String methodName = method.getName();
+              if ( "isSigned".equals( methodName ) ) {
                 if ( args != null ) {
-                  return isSigned ( (Integer) args[0] );
+                  return isSigned( (Integer) args[0] );
                 }
               }
               throw cause;
@@ -666,13 +681,13 @@ public class DriverProxyInvocationChain {
       }
     }
 
-    private String getColumnName ( Integer column ) throws SQLException {
+    private String getColumnName( Integer column ) throws SQLException {
       String columnName = null;
-      columnName = this.rsmd.getColumnName ( column );
+      columnName = this.rsmd.getColumnName( column );
       if ( columnName != null ) {
-        int dotIndex = columnName.indexOf ( '.' );
+        int dotIndex = columnName.indexOf( '.' );
         if ( dotIndex != -1 ) {
-          return columnName.substring ( dotIndex + 1 );
+          return columnName.substring( dotIndex + 1 );
         }
       }
       return columnName;
@@ -688,15 +703,15 @@ public class DriverProxyInvocationChain {
      * @return boolean
      * @throws SQLException the sQL exception
      */
-    public boolean isSigned ( int column ) throws SQLException {
-      int numCols = rsmd.getColumnCount ();
+    public boolean isSigned( int column ) throws SQLException {
+      int numCols = rsmd.getColumnCount();
 
       if ( column < 1 || column > numCols ) {
-        throw new SQLException ( "Invalid column value: " + column );
+        throw new SQLException( "Invalid column value: " + column );
       }
 
       // we need to convert the thrift type to the SQL type
-      int type = rsmd.getColumnType ( column );
+      int type = rsmd.getColumnType( column );
       switch ( type ) {
         case Types.DOUBLE:
         case Types.DECIMAL:
@@ -712,11 +727,11 @@ public class DriverProxyInvocationChain {
     }
   }
 
-  protected static boolean isInitialized () {
+  protected static boolean isInitialized() {
     return initialized;
   }
 
-  public static void setInitialized ( boolean initialized ) {
+  public static void setInitialized( boolean initialized ) {
     DriverProxyInvocationChain.initialized = initialized;
   }
 }

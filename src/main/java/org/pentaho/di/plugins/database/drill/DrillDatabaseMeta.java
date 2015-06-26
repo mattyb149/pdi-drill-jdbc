@@ -7,8 +7,25 @@ import org.pentaho.di.core.database.DatabaseMeta;
 import org.pentaho.di.core.plugins.DatabaseMetaPlugin;
 import org.pentaho.di.core.row.ValueMetaInterface;
 
+import java.util.Arrays;
+import java.util.List;
+
 @DatabaseMetaPlugin( type = "drill", typeDescription = "Apache Drill" )
 public class DrillDatabaseMeta extends BaseDatabaseMeta implements DatabaseInterface {
+
+  private static final List<String> sysTables =
+    Arrays.asList(
+      "CATALOGS",
+      "COLUMNS",
+      "SCHEMATA",
+      "TABLES",
+      "VIEWS",
+      "boot",
+      "drillbits",
+      "memory",
+      "options",
+      "threads",
+      "version");
 
   @Override
   public int[] getAccessTypeList () {
@@ -122,5 +139,38 @@ public class DrillDatabaseMeta extends BaseDatabaseMeta implements DatabaseInter
   @Override
   public String[] getUsedLibraries () {
     return null;
+  }
+
+  /**
+   * @return The start quote sequence, mostly just double quote, but sometimes [, ...
+   */
+  @Override
+  public String getStartQuote() {
+    return "`";
+  }
+
+  /**
+   * @return The end quote sequence, mostly just double quote, but sometimes ], ...
+   */
+  @Override
+  public String getEndQuote() {
+    return "`";
+  }
+
+  /**
+   * @return an array of reserved words for the database type...
+   */
+  @Override
+  public String[] getReservedWords() {
+    return new String[] { "TABLES" };
+  }
+
+  /**
+   * @param tableName
+   * @return true if the specified table is a system table
+   */
+  @Override
+  public boolean isSystemTable( String tableName ) {
+    return tableName != null && sysTables.contains( tableName );
   }
 }

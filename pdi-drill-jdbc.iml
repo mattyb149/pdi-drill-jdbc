@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" relativePaths="true" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="pdi-drill-jdbc" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" relativePaths="true" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/build/classes/main" />
     <output-test url="file://$MODULE_DIR$/build/classes/test" />
@@ -14,233 +14,486 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: kettle-core-TRUNK-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-beanutils-1.8.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-collections-3.2.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-logging-1.1.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-lang-2.6" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-httpclient-3.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-vfs-20100924-pentaho" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-pool-1.5.7" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: metastore-TRUNK-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: dom4j-1.6.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jug-lgpl-2.0.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jsch-0.1.46" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: ognl-2.6.9" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: scannotation-1.0.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: secondstring-20060615" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: esapi-2.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: javassist-3.12.1.GA" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jcifs-1.3.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: xz-1.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: servlet-api-2.5-20081211" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-fileupload-1.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: log4j-1.2.16" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: xom-1.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: bsh-core-2.0b4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: antisamy-1.4.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: xmlParserAPIs-2.6.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jaxen-1.1-beta-8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: batik-css-1.7" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: nekohtml-1.9.12" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jdom-1.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: batik-ext-1.7" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: batik-util-1.7" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: xml-apis-ext-1.3.04" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-digester-1.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: drill-jdbc-0.5.0-incubating-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: optiq-core-0.9-drill-r2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: drill-common-0.5.0-incubating-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: drill-java-exec-0.5.0-incubating-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: drill-storage-hive-core-0.5.0-incubating-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: drill-storage-hive-core-0.5.0-incubating-SNAPSHOT-tests" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: mondrian-data-foodmart-json-0.3.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: xercesImpl-2.11.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: xalan-2.7.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: netty-handler-4.0.20.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jul-to-slf4j-1.7.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jcl-over-slf4j-1.7.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: log4j-over-slf4j-1.7.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: optiq-avatica-0.9-drill-r2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: eigenbase-properties-1.1.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: linq4j-0.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: drill-protocol-0.5.0-incubating-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: junit-4.11" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: config-1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-lang3-3.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: msgpack-0.6.6" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: reflections-0.9.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hibernate-validator-4.3.1.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: antlr-runtime-3.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: joda-time-2.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: asm-debug-all-4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-pool2-2.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-math-2.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: paranamer-2.5.6" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: codemodel-2.6" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-server-9.1.5.v20140505" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-servlet-9.1.5.v20140505" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-container-jetty-servlet-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-media-multipart-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-jaxrs-json-provider-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: netty-transport-native-epoll-4.0.20.Final-linux-x86_64" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-mvc-freemarker-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: parquet-column-1.5.1-drill-r4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: parquet-hadoop-1.5.1-drill-r4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: parquet-format-2.1.1-drill-r1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: parquet-common-1.5.1-drill-r4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: parquet-jackson-1.5.1-drill-r4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: parquet-encoding-1.5.1-drill-r4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: parquet-generator-1.5.1-drill-r4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: metrics-core-3.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: metrics-servlets-3.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: javax.inject-1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jcommander-1.30" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: curator-x-discovery-2.5.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hppc-0.4.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: protobuf-java-2.5.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hazelcast-3.1.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: infinispan-core-6.0.2.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: infinispan-tree-6.0.2.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-compiler-jdk-2.7.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-util-6.1.26" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-common-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-client-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hbase-0.94.22-drill-r1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: drill-hive-exec-shaded-0.5.0-incubating-SNAPSHOT" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: xml-apis-1.4.01" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: serializer-2.7.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: netty-buffer-4.0.20.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: netty-transport-4.0.20.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: netty-codec-4.0.20.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: protostuff-core-1.0.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: protostuff-json-1.0.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hamcrest-core-1.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: json-simple-1.1.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: stringtemplate-3.2.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: antlr-2.7.7" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: mockito-all-1.9.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: javax.servlet-api-3.1.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-http-9.1.5.v20140505" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-io-9.1.5.v20140505" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-security-9.1.5.v20140505" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-container-servlet-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-container-jetty-http-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-webapp-9.1.1.v20140108" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-common-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-server-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: javax.ws.rs-api-2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: javax.inject-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: mimepull-1.9.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-jaxrs-base-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-module-jaxb-annotations-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: netty-common-4.0.20.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-mvc-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: metrics-healthchecks-3.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: metrics-json-3.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: metrics-jvm-3.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: curator-recipes-2.5.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: zookeeper-3.4.6" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: infinispan-commons-6.0.2.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jgroups-3.4.1.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jboss-transaction-api_1.1_spec-1.0.1.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jboss-marshalling-river-1.4.4.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jboss-marshalling-1.4.4.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jboss-logging-3.1.2.GA" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-annotations-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-cli-1.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-math3-3.1.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: xmlenc-0.52" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-net-3.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: servlet-api-2.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: avro-1.7.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-auth-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jsr305-1.3.9" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-hdfs-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-mapreduce-client-app-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-mapreduce-client-core-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-mapreduce-client-jobclient-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: metrics-core-2.1.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: high-scale-lib-1.1.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-jaxrs-1.8.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-xc-1.8.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jasper-compiler-5.5.23" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jasper-runtime-5.5.23" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jsp-api-2.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-el-1.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hive-metastore-0.12.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hive-hbase-handler-0.12.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: protostuff-api-1.0.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-util-9.1.5.v20140505" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-container-servlet-core-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-continuation-9.1.1.v20140108" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-xml-9.1.1.v20140108" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: javax.annotation-api-1.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-guava-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hk2-api-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hk2-locator-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: osgi-resource-locator-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-client-2.8" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: curator-framework-2.5.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: httpclient-4.2.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-mapreduce-client-common-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-mapreduce-client-shuffle-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-yarn-common-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: antlr-3.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: ST4-4.0.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hive-serde-0.12.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: bonecp-0.7.1.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: datanucleus-api-jdo-3.2.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: datanucleus-core-3.2.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: datanucleus-rdbms-3.2.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jdo-api-3.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: derby-10.4.2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hk2-utils-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: aopalliance-repackaged-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: curator-client-2.5.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: httpcore-4.2.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-yarn-client-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-yarn-server-common-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hadoop-yarn-server-nodemanager-2.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jaxb-api-2.2.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: guice-3.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jersey-guice-1.9" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hive-common-0.12.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: libfb303-0.9.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: avro-mapred-1.7.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jta-1.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jettison-1.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: stax-api-1.0-2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: activation-1.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: aopalliance-1.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: cglib-2.2.1-v20090111" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: hive-shims-0.12.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: libthrift-0.9.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: avro-ipc-1.7.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: asm-3.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: velocity-1.7" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: guava-16.0.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: janino-2.7.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-dbcp-1.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-databind-2.2.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-codec-1.6" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: freemarker-2.3.20" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: snappy-java-1.0.5" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-mapper-asl-1.9.13" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-compiler-2.7.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-io-2.4" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jetty-6.1.26" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-configuration-1.6" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jline-0.9.94" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-compress-1.4.1" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: slf4j-api-1.7.6" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-core-asl-1.9.13" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: validation-api-1.1.0.Final" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: javassist-3.18.1-GA" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-annotations-2.2.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: jackson-core-2.2.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: commons-beanutils-core-1.8.0" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: netty-3.7.0.Final" level="project" />
+    <orderEntry type="module" module-name="Kettle Core" />
+    <orderEntry type="module" module-name="Kettle DB Dialog" />
+    <orderEntry type="module" module-name="Kettle Engine" />
+    <orderEntry type="module" module-name="Kettle UI" />
+    <orderEntry type="module" module-name="PDI5 Log4j logging plugin" />
+    <orderEntry type="module" module-name="drill-common" />
+    <orderEntry type="module" module-name="drill-contrib-data-parent" />
+    <orderEntry type="module" module-name="drill-contrib-parent" />
+    <orderEntry type="module" module-name="drill-contrib-storage-hive-parent" />
+    <orderEntry type="module" module-name="drill-hive-exec-shaded" />
+    <orderEntry type="module" module-name="drill-java-exec" />
+    <orderEntry type="module" module-name="drill-jdbc" />
+    <orderEntry type="module" module-name="drill-jdbc-all" />
+    <orderEntry type="module" module-name="drill-protocol" />
+    <orderEntry type="module" module-name="drill-root" />
+    <orderEntry type="module" module-name="drill-sqlline" />
+    <orderEntry type="module" module-name="drill-storage-hbase" />
+    <orderEntry type="module" module-name="drill-storage-hive-core" />
+    <orderEntry type="library" exported="" name="Gradle: org.apache.drill.exec:drill-jdbc-all:1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: org.apache.hadoop:hadoop-common:2.4.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: pentaho-kettle:kettle-core:TRUNK-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: pentaho-kettle:kettle-engine:TRUNK-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: pentaho-kettle:kettle-dbdialog:TRUNK-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.hydromatic:optiq-avatica:0.9-drill-r20" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: net.hydromatic:optiq-avatica:0.9-drill-r20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.drill.exec:drill-java-exec:1.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.drill.exec:drill-java-exec:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.drill:drill-common:1.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.drill:drill-common:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.drill.exec:drill-jdbc:1.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.drill.exec:drill-jdbc:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: xerces:xercesImpl:2.11.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: xerces:xercesImpl:2.11.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: xalan:xalan:2.7.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: xalan:xalan:2.7.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: ch.qos.logback:logback-classic:1.0.13" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-classic:1.0.13" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: ch.qos.logback:logback-core:1.0.13" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-core:1.0.13" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.netty:netty-handler:4.0.27.Final" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: io.netty:netty-handler:4.0.27.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-api:1.7.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-api:1.7.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:jul-to-slf4j:1.7.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.slf4j:jul-to-slf4j:1.7.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:1.9.5" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.mockito:mockito-core:1.9.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-annotations:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-annotations:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-cli:commons-cli:1.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-cli:commons-cli:1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.commons:commons-math3:3.1.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.commons:commons-math3:3.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: xmlenc:xmlenc:0.52" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: xmlenc:xmlenc:0.52" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-httpclient:commons-httpclient:3.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-httpclient:commons-httpclient:3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-net:commons-net:3.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-net:commons-net:3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mortbay.jetty:jetty:6.1.26" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.mortbay.jetty:jetty:6.1.26" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mortbay.jetty:jetty-util:6.1.26" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.mortbay.jetty:jetty-util:6.1.26" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.sun.jersey:jersey-core:1.9" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.sun.jersey:jersey-core:1.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.sun.jersey:jersey-json:1.9" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.sun.jersey:jersey-json:1.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.sun.jersey:jersey-server:1.9" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.sun.jersey:jersey-server:1.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: tomcat:jasper-compiler:5.5.23" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: tomcat:jasper-compiler:5.5.23" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: tomcat:jasper-runtime:5.5.23" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: tomcat:jasper-runtime:5.5.23" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.servlet.jsp:jsp-api:2.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.servlet.jsp:jsp-api:2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-el:commons-el:1.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-el:commons-el:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-logging:commons-logging:1.1.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-logging:commons-logging:1.1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.java.dev.jets3t:jets3t:0.9.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: net.java.dev.jets3t:jets3t:0.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-configuration:commons-configuration:1.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-configuration:commons-configuration:1.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-log4j12:1.7.5" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-log4j12:1.7.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.protobuf:protobuf-java:2.5.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.google.protobuf:protobuf-java:2.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-auth:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-auth:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.commons:commons-compress:1.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.commons:commons-compress:1.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-beanutils:commons-beanutils:1.8.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-beanutils:commons-beanutils:1.8.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-vfs:commons-vfs:20100924-pentaho" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-vfs:commons-vfs:20100924-pentaho" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-pool:commons-pool:1.5.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-pool:commons-pool:1.5.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: pentaho:metastore:TRUNK-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: pentaho:metastore:TRUNK-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: jug-lgpl:jug-lgpl:2.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: jug-lgpl:jug-lgpl:2.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: ognl:ognl:2.6.9" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: ognl:ognl:2.6.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.sf.scannotation:scannotation:1.0.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: net.sf.scannotation:scannotation:1.0.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: secondstring:secondstring:20060615" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: secondstring:secondstring:20060615" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.owasp.esapi:esapi:2.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.owasp.esapi:esapi:2.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javassist:javassist:3.12.1.GA" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javassist:javassist:3.12.1.GA" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.samba.jcifs:jcifs:1.3.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.samba.jcifs:jcifs:1.3.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-bridge:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-bridge:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-css:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-css:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-dom:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-dom:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-gvt:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-gvt:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-svg-dom:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-svg-dom:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-transcoder:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-transcoder:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-codec:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-codec:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-util:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-util:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-ext:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-ext:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-xml:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-xml:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-anim:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-anim:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-parser:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-parser:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-script:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-script:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-awt-util:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-awt-util:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: xml-apis:xml-apis-ext:1.3.04" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: xml-apis:xml-apis-ext:1.3.04" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: eigenbase:eigenbase-properties:1.1.4" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: eigenbase:eigenbase-properties:1.1.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.hydromatic:linq4j:0.4" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: net.hydromatic:linq4j:0.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.ow2.asm:asm-debug-all:5.0.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.ow2.asm:asm-debug-all:5.0.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.commons:commons-pool2:2.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.commons:commons-pool2:2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.univocity:univocity-parsers:1.3.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.univocity:univocity-parsers:1.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.commons:commons-math:2.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.commons:commons-math:2.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.thoughtworks.paranamer:paranamer:2.5.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.thoughtworks.paranamer:paranamer:2.5.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.4.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.4.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.netty:netty-transport-native-epoll:4.0.27.Final:linux-x86_64" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:4.0.27.Final:linux-x86_64" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.calcite:calcite-core:1.1.0-drill-r7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.calcite:calcite-core:1.1.0-drill-r7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.sf.jpam:jpam:1.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: net.sf.jpam:jpam:1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.twitter:parquet-common:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.twitter:parquet-common:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.twitter:parquet-jackson:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.twitter:parquet-jackson:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.twitter:parquet-encoding:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.twitter:parquet-encoding:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.twitter:parquet-generator:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.twitter:parquet-generator:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.codahale.metrics:metrics-core:3.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.codahale.metrics:metrics-core:3.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.codahale.metrics:metrics-servlets:3.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.codahale.metrics:metrics-servlets:3.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.drill:drill-protocol:1.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.drill:drill-protocol:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.beust:jcommander:1.30" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.beust:jcommander:1.30" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.curator:curator-x-discovery:2.5.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.curator:curator-x-discovery:2.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.carrotsearch:hppc:0.4.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.carrotsearch:hppc:0.4.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: joda-time:joda-time:2.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: joda-time:joda-time:2.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.avro:avro-mapred:1.7.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.avro:avro-mapred:1.7.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.11" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: junit:junit:4.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.typesafe:config:1.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.typesafe:config:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.commons:commons-lang3:3.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.commons:commons-lang3:3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.msgpack:msgpack:0.6.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.msgpack:msgpack:0.6.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.reflections:reflections:0.9.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.reflections:reflections:0.9.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.4.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.4.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hibernate:hibernate-validator:4.3.1.Final" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.hibernate:hibernate-validator:4.3.1.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.antlr:antlr-runtime:3.4" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.antlr:antlr-runtime:3.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: xml-apis:xml-apis:1.4.01" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: xml-apis:xml-apis:1.4.01" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: xalan:serializer:2.7.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: xalan:serializer:2.7.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.netty:netty-buffer:4.0.27.Final" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: io.netty:netty-buffer:4.0.27.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.netty:netty-transport:4.0.27.Final" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: io.netty:netty-transport:4.0.27.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.netty:netty-codec:4.0.27.Final" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: io.netty:netty-codec:4.0.27.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:1.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.objenesis:objenesis:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.codehaus.jettison:jettison:1.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.codehaus.jettison:jettison:1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.sun.xml.bind:jaxb-impl:2.2.3-1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.sun.xml.bind:jaxb-impl:2.2.3-1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.codehaus.jackson:jackson-jaxrs:1.8.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.codehaus.jackson:jackson-jaxrs:1.8.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.codehaus.jackson:jackson-xc:1.8.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.codehaus.jackson:jackson-xc:1.8.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: asm:asm:3.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: asm:asm:3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.jamesmurty.utils:java-xmlbuilder:0.4" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.jamesmurty.utils:java-xmlbuilder:0.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-digester:commons-digester:1.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-digester:commons-digester:1.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-beanutils:commons-beanutils-core:1.8.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-beanutils:commons-beanutils-core:1.8.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-fileupload:commons-fileupload:1.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-fileupload:commons-fileupload:1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: xom:xom:1.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: xom:xom:1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.beanshell:bsh-core:2.0b4" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.beanshell:bsh-core:2.0b4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.owasp.antisamy:antisamy:1.4.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.owasp.antisamy:antisamy:1.4.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:fop:0.94" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:fop:0.94" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-svggen:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-svggen:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:batik-js:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:batik-js:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.4.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.4.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.4.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.4.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.4.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.4.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.netty:netty-common:4.0.27.Final" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: io.netty:netty-common:4.0.27.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.calcite:calcite-avatica:1.1.0-drill-r7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.calcite:calcite-avatica:1.1.0-drill-r7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.calcite:calcite-linq4j:1.1.0-drill-r7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.calcite:calcite-linq4j:1.1.0-drill-r7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.pentaho:pentaho-aggdesigner-algorithm:5.1.5-jhyde" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.pentaho:pentaho-aggdesigner-algorithm:5.1.5-jhyde" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.codahale.metrics:metrics-healthchecks:3.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.codahale.metrics:metrics-healthchecks:3.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.codahale.metrics:metrics-json:3.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.codahale.metrics:metrics-json:3.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.codahale.metrics:metrics-jvm:3.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.codahale.metrics:metrics-jvm:3.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.dyuproject.protostuff:protostuff-core:1.0.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.dyuproject.protostuff:protostuff-core:1.0.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.dyuproject.protostuff:protostuff-json:1.0.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.dyuproject.protostuff:protostuff-json:1.0.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.curator:curator-recipes:2.5.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.curator:curator-recipes:2.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.avro:avro-ipc:1.7.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.avro:avro-ipc:1.7.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.avro:avro-ipc:1.7.7:tests" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.avro:avro-ipc:1.7.7:tests" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.antlr:stringtemplate:3.2.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.antlr:stringtemplate:3.2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.sun.codemodel:codemodel:2.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.sun.codemodel:codemodel:2.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jetty:jetty-server:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-server:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jetty:jetty-servlet:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-servlet:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.containers:jersey-container-jetty-servlet:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.containers:jersey-container-jetty-servlet:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.media:jersey-media-multipart:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.media:jersey-media-multipart:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.ext:jersey-mvc-freemarker:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.ext:jersey-mvc-freemarker:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.twitter:parquet-column:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.twitter:parquet-column:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.twitter:parquet-hadoop:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.twitter:parquet-hadoop:1.6.0rc3-drill-r0.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.codehaus.janino:commons-compiler-jdk:2.7.4" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.codehaus.janino:commons-compiler-jdk:2.7.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-client:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-client:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.xml.bind:jaxb-api:2.2.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.xml.bind:jaxb-api:2.2.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: xerces:xmlParserAPIs:2.6.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: xerces:xmlParserAPIs:2.6.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: jaxen:jaxen:1.1-beta-8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: jaxen:jaxen:1.1-beta-8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.sourceforge.nekohtml:nekohtml:1.9.12" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: net.sourceforge.nekohtml:nekohtml:1.9.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.xmlgraphics:xmlgraphics-commons:1.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.xmlgraphics:xmlgraphics-commons:1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.avalon.framework:avalon-framework-api:4.3.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.avalon.framework:avalon-framework-api:4.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.avalon.framework:avalon-framework-impl:4.3.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.avalon.framework:avalon-framework-impl:4.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.dyuproject.protostuff:protostuff-api:1.0.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.dyuproject.protostuff:protostuff-api:1.0.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.curator:curator-framework:2.5.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.curator:curator-framework:2.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.velocity:velocity:1.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.velocity:velocity:1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jetty:jetty-http:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-http:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jetty:jetty-io:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-io:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jetty:jetty-security:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-security:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.containers:jersey-container-jetty-http:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.containers:jersey-container-jetty-http:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jetty:jetty-webapp:9.1.1.v20140108" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-webapp:9.1.1.v20140108" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.core:jersey-common:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.core:jersey-common:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.core:jersey-server:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.core:jersey-server:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.ws.rs:javax.ws.rs-api:2.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.ws.rs:javax.ws.rs-api:2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.hk2.external:javax.inject:2.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.hk2.external:javax.inject:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jvnet.mimepull:mimepull:1.9.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.jvnet.mimepull:mimepull:1.9.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.ext:jersey-mvc:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.ext:jersey-mvc:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-hdfs:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-hdfs:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-app:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-app:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-core:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-core:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: jdom:jdom:1.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: jdom:jdom:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.curator:curator-client:2.5.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.curator:curator-client:2.5.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jetty:jetty-util:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-util:9.1.5.v20140505" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet-core:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet-core:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jetty:jetty-continuation:9.1.1.v20140108" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-continuation:9.1.1.v20140108" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.eclipse.jetty:jetty-xml:9.1.1.v20140108" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-xml:9.1.1.v20140108" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.annotation:javax.annotation-api:1.2" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.annotation:javax.annotation-api:1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.hk2:hk2-api:2.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.hk2:hk2-api:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.hk2:hk2-locator:2.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.hk2:hk2-locator:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.hk2:osgi-resource-locator:1.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.hk2:osgi-resource-locator:1.0.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.jersey.core:jersey-client:2.8" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.jersey.core:jersey-client:2.8" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-common:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-common:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-yarn-common:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-yarn-common:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.hk2:hk2-utils:2.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.hk2:hk2-utils:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.glassfish.hk2.external:aopalliance-repackaged:2.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.glassfish.hk2.external:aopalliance-repackaged:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-yarn-client:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-yarn-client:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-yarn-server-common:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-yarn-server-common:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.hadoop:hadoop-yarn-server-nodemanager:2.4.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.hadoop:hadoop-yarn-server-nodemanager:2.4.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.inject:guice:3.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.google.inject:guice:3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.sun.jersey.contribs:jersey-guice:1.9" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.sun.jersey.contribs:jersey-guice:1.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.sonatype.sisu.inject:cglib:2.2.1-v20090111" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.sonatype.sisu.inject:cglib:2.2.1-v20090111" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:guava:17.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.google.guava:guava:17.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.tukaani:xz:1.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.tukaani:xz:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.jcraft:jsch:0.1.46" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.jcraft:jsch:0.1.46" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.codehaus.janino:janino:2.7.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.codehaus.janino:janino:2.7.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-dbcp:commons-dbcp:1.4" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-dbcp:commons-dbcp:1.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.avro:avro:1.7.7" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.avro:avro:1.7.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.4.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.4.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.httpcomponents:httpclient:4.2.5" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.httpcomponents:httpclient:4.2.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.codehaus.janino:commons-compiler:2.7.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.codehaus.janino:commons-compiler:2.7.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.zookeeper:zookeeper:3.4.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.zookeeper:zookeeper:3.4.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: jline:jline:0.9.94" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: jline:jline:0.9.94" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.freemarker:freemarker:2.3.20" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.freemarker:freemarker:2.3.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.twitter:parquet-format:2.2.0-rc1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: com.twitter:parquet-format:2.2.0-rc1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.xerial.snappy:snappy-java:1.1.1.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.xerial.snappy:snappy-java:1.1.1.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.validation:validation-api:1.1.0.Final" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: javax.validation:validation-api:1.1.0.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.javassist:javassist:3.18.1-GA" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.javassist:javassist:3.18.1-GA" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-all:1.9.0" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.mockito:mockito-all:1.9.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.httpcomponents:httpcore:4.2.4" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: org.apache.httpcomponents:httpcore:4.2.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.netty:netty:3.7.0.Final" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Gradle: io.netty:netty:3.7.0.Final" level="project" />
+  </component>
+  <component name="sonarModuleSettings">
+    <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
+    <option name="serverName" value="&lt;PROJECT&gt;" />
   </component>
 </module>
-
