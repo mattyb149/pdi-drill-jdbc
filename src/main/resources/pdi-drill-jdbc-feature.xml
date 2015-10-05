@@ -1,0 +1,7 @@
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+
+  <feature name="pdi-drill" version="1.0">
+    <bundle>mvn:org.pentaho.community/pdi-drill-jdbc/1.0-SNAPSHOT</bundle>
+  </feature>
+
+</features>

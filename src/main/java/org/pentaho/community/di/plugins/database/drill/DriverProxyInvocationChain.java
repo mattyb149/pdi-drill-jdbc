@@ -20,7 +20,7 @@
  *
  ******************************************************************************/
 
-package org.pentaho.di.plugins.database.drill;
+package org.pentaho.community.di.plugins.database.drill;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
