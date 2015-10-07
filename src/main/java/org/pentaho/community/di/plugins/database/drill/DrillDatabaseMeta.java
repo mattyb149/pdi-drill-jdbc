@@ -1,5 +1,6 @@
 package org.pentaho.community.di.plugins.database.drill;
 
+import org.pentaho.community.di.plugins.database.drill.delegate.DelegateDriver;
 import org.pentaho.di.core.Const;
 import org.pentaho.di.core.database.BaseDatabaseMeta;
 import org.pentaho.di.core.database.DatabaseInterface;
@@ -39,7 +40,7 @@ public class DrillDatabaseMeta extends BaseDatabaseMeta implements DatabaseInter
 
   @Override
   public String getDriverClass () {
-    return org.pentaho.community.di.plugins.database.drill.delegate.DelegateDriver.class.getCanonicalName();
+    return DelegateDriver.class.getCanonicalName();
 
   }
 

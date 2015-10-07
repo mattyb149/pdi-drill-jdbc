@@ -39,7 +39,7 @@
   </repositories>
 
   <properties>
-    <dependency.pentaho.version>6.0.0.0-349</dependency.pentaho.version>
+    <dependency.pentaho.version>6.0.0.0-352</dependency.pentaho.version>
     <!-- Plugin dependencies -->
     <target.jdk.version>1.7</target.jdk.version>
     <plugin.maven-bundle-plugin.version>2.3.7</plugin.maven-bundle-plugin.version>
@@ -61,6 +61,12 @@
     <dependency>
       <groupId>pentaho-kettle</groupId>
       <artifactId>kettle-engine</artifactId>
+      <version>${dependency.pentaho.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>pentaho</groupId>
+      <artifactId>pentaho-database-model</artifactId>
       <version>${dependency.pentaho.version}</version>
       <scope>provided</scope>
     </dependency>
